@@ -1,0 +1,17 @@
+package Introtri;
+
+public class Birddemo {
+	
+	public static void main(String[] args){
+		Bird p=new Bird();
+		p.birdColor="Green";
+		p.birdName="Parrot";
+		p.setSingStatus(false);
+		p.fly();
+		Flight f=new Flight();
+		f.fly();
+		
+				
+	}
+
+}
