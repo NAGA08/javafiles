@@ -1,0 +1,44 @@
+package Strings;
+
+import java.util.Vector;
+
+public class Stringdemo {
+
+	public static void main(String[] args) {
+		int age;
+		Vector v;
+		String s="Hello";
+		System.out.println("Object id :"+s.hashCode());
+		
+		String s1="Hello";
+		System.out.println("Object id :"+s1.hashCode());
+		System.out.print(s1);
+		
+		
+		String name=" Sachin ";
+		name.concat(" Tendulkar ");
+		System.out.println(name);
+		
+		//String Buffer
+		
+		StringBuffer myname=new StringBuffer("Sachin");
+		myname.append(" Tendulkar ");
+		System.out.print(myname);
+		
+		//String Builder
+		
+		StringBuilder sb=new StringBuilder("Hindusthan");
+		sb.append(" Coputers Limited ");
+		System.out.println(" is working in "+sb);
+		//creating vector class type object
+		
+		v=new Vector();
+		
+		v.addElement(s1);
+		v.add(myname);
+		System.out.println("Collection v:"+v);
+		
+		
+	}
+
+}
