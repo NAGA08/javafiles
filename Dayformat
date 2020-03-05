@@ -1,0 +1,37 @@
+package inheritance;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateFormat {
+	
+	public static void main(String[] args) {
+		Date d=new Date();
+		SimpleDateFormat dof=new SimpleDateFormat("E");
+		String day=dof.format(d);
+		System.out.println(day);
+		switch(day.trim()){
+		
+		case "Mon" : System.out.println("Red");
+	    break;
+		case "Tue" : System.out.println("Green");
+		break;
+		case "Wed" : System.out.println("Blue");
+		break;
+		case "Thu" : System.out.println("Yellow");
+		break;
+		case "Fri" : System.out.println("White");
+		break;
+		case "Sat" : System.out.println("Black");
+		break;
+		case "Sun" : System.out.println("Orange");
+	    break;
+	    default    : System.out.println("Invalid condition");
+	    			
+		
+		}
+		
+	}
+
+		
+}
