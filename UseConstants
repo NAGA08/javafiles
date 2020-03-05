@@ -1,9 +1,7 @@
 package inheritance;
-import static inheritance.PhysicalConstants.SPEEDOFLIGHTINVACCUM;
-import static inheritance.PhysicalConstants.GRAVITATIONALCONSTANT;
-import static inheritance.PhysicalConstants.STANDARDGRAVITATIONALACCELERATION;
+import  inheritance.PhysicalConstants;
 
-public class UseConstants {
+public class UseConstants implements PhysicalConstants{
 	
 	public static void main(String args[])
 	{
@@ -22,7 +20,7 @@ public class UseConstants {
 		
 		System.out.println("E="+E);
 		System.out.println("F="+F);
-		System.out.println("d"+d);
+		System.out.println("d="+d);
 		
 				
 	}
